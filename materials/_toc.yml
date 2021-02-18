@@ -12,9 +12,9 @@
   #- file: materials/lectures/07_lecture_writing_dockerfiles
   #- file: materials/lectures/08_repro_wrap_up
 
-#- part: Assignments
-#  sections:
-  #- file: materials/assignments/milestone1
+- part: Assignments
+  sections:
+  - file: materials/assignments/milestone1
   #- file: materials/assignments/individual_assignment1
 
 - part: Appendices
