@@ -1,0 +1,14 @@
+- file: README
+  numbered: false
+
+- chapter: Lectures
+  sections:
+  #- file: lectures/01_lecture-intro-to-ds-workflows
+  #- file: lectures/02_lecture-intro-to-scripts
+  #- file: lectures/03_lecture-advanced-reporting
+  #- file: lectures/04_lecture-shell-driver-scripts
+  #- file: lectures/05_lecture-make-driver-script
+  #- file: lectures/06_lecture-intro-to-docker
+  #- file: lectures/07_lecture_writing_dockerfiles
+  #- file: lectures/08_repro_wrap_up
+  - file: lectures/appendix
