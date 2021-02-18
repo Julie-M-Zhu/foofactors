@@ -51,8 +51,8 @@ This is a project-based course where you will work collaboratively in groups to 
 | 4 | Testing coverage & debugging | 50 min of video to watch: <ul><li>[Jenny Bryan's talk on troubleshooting and debugging](https://resources.rstudio.com/rstudio-conf-2020/object-of-type-closure-is-not-subsettable-jenny-bryan)</li></ul>  |  |
 | 5 | Continous integration (CI) via GitHub Actions |  | <ul><li>[GitHub Actions docs](https://help.github.com/en/actions)</li><li>[Github actions with R](https://ropenscilabs.github.io/actions_sandbox/packageci.html)</li><li>[Continuous integration (Python)](https://py-pkgs.org/08-ci-cd#ci-cd-tools)</li></ul> |
 | 6 | Continuous deployment, versioning & package documentation |  | <ul><li>[Semantic versioning](https://semver.org/)</ul><li>[R: Object Documentation](https://r-pkgs.org/man.html)</li><li>[R: Vignettes](https://r-pkgs.org/vignettes.html)</li><li>[`pkgdown`](https://pkgdown.r-lib.org/)<li>[Documentation (Python)](https://py-pkgs.org/06-documentation)</li></ul> |
-| 7 | Publishing your package on the package indices (CRAN & PyPI), and peer review of data science R & Python packages |  | <ul><li>[rOpenSci Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/)</li><li>[The pyOpenSci Developer Guide](https://www.pyopensci.org/dev_guide/intro)</li></ul> | [lecture 7 video link](https://youtu.be/LQjTuoC8DVo) |
-| 8 | Copyright & Licenses |  | [Who owns the code?](https://asp-software.org/www/misv_resources/business-articles/who-owns-the-code/) | [lecture 8 video link](https://youtu.be/IUmf-z2yRFE) |
+| 7 | Publishing your package on the package indices (CRAN & PyPI), and peer review of data science R & Python packages |  | <ul><li>[rOpenSci Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/)</li><li>[The pyOpenSci Developer Guide](https://www.pyopensci.org/dev_guide/intro)</li></ul> |  |
+| 8 | Copyright & Licenses |  | [Who owns the code?](https://asp-software.org/www/misv_resources/business-articles/who-owns-the-code/) | |
 
 ## Textbooks:
 - [R packages](https://r-pkgs.org/) by Hadley Wickham and Jenny Bryan
