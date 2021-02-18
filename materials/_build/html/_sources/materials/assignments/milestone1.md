@@ -32,7 +32,7 @@ Similar to what you did in DSCI 522, create a team-work contract. The contract s
 Come up with a topic for your project. Discuss the topic with your TA or lab instructor and proceed only after your topic has been approved by one of them. 
 
 ### 3. Create project structure for the Python project
-rubric={mechanics:50}
+rubric={mechanics:40}
 
 1. Create [project structure for python project](https://ubc-mds.github.io/py-pkgs/whole-game.html) and push it as a public repository in the [UBC-MDS organization](https://github.com/UBC-MDS/) on Github.com.  
 
@@ -57,14 +57,14 @@ rubric={mechanics:50}
     - a paragraph describing where your packages fit into the Python ecosystem (are there any other Python packages that have the same/similar functionality? Provide links to any that do. If none exist, then clearly state this as well).  
 
 ### 4. Function specifications
-rubric={quality:10}
+rubric={quality:20}
 
 For this milestone you will write function documentation that will serve as specifications, but you will **NOT** write any code for your package functions. Specifically, set-up empty functions (with appropriate function names) containing no code in the files where you will eventually write code. Write function documentation (e.g., complete docstrings). These are the functions you wrote about in your proposal.
 
-### 5. Project boards
+### 5. Manage issues
 rubric={mechanics:10}
 
-Using project boards and tasks, make it clear who is responsible for what function. In particular, create an issue for each function in the package. Each of these issues must be assigned to a single person on the team. We want all of you to get coding experience in the project and **each team member should be responsible for a function in R and Python.** So if you are a team of four, you'll be writing four functions for each package and if you are a team of three, you will be writing three functions for each package. 
+Manage issues effectively through project boards and milestones, make it clear who is responsible for what and what project milestone each task is associated with. In particular, create an issue for each function in the package. Each of these issues must be assigned to a single person on the team. We want all of you to get coding experience in the project and **each team member should be responsible for a function in R and Python.** So if you are a team of four, you'll be writing four functions for each package and if you are a team of three, you will be writing three functions for each package. 
 
 ## Specific expectations for this milestone are:
 rubric={mechanics:10}
