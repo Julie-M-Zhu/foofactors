@@ -15,7 +15,7 @@
 - part: Assignments
   sections:
   - file: materials/assignments/milestone1
-  #- file: materials/assignments/individual_assignment1
+  - file: materials/assignments/individual_assignment1
 
 - part: Appendices
   sections:
