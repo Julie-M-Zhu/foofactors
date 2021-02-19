@@ -11,7 +11,7 @@
   #- file: materials/lectures/06_lecture-intro-to-docker
   #- file: materials/lectures/07_lecture_writing_dockerfiles
   #- file: materials/lectures/08_repro_wrap_up
-g
+
 - part: Assignments
   sections:
   - file: materials/assignments/milestone1
