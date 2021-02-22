@@ -26,7 +26,7 @@
 # 
 # ```{figure} img/github_kanban.png
 # ---
-# height: 800px
+# width: 800px
 # name: usethis-devtools
 # ---
 # ```
@@ -182,7 +182,7 @@ YouTubeVideo('kOE6b8zpfCY', width=854, height=480)
 # 
 # ```{figure} img/create_branch.png
 # ---
-# height: 600px
+# width: 600px
 # name: create_branch
 # ---
 # ```
@@ -193,7 +193,7 @@ YouTubeVideo('kOE6b8zpfCY', width=854, height=480)
 # 
 # ```{figure} img/view_branches.png
 # ---
-# height: 600px
+# width: 600px
 # name: view_branches
 # ---
 # ```
@@ -204,7 +204,7 @@ YouTubeVideo('kOE6b8zpfCY', width=854, height=480)
 # 
 # ```{figure} img/delete_branches.png
 # ---
-# height: 600px
+# width: 600px
 # name: delete_branches
 # ---
 # ```
