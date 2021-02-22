@@ -24,7 +24,12 @@
 # 
 # Reading: [About project boards - GitHub Help](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards)
 # 
-# <img src="img/github_kanban.png" width=800>
+# ```{figure} img/github_kanban.png
+# ---
+# height: 800px
+# name: usethis-devtools
+# ---
+# ```
 # 
 # Source: <https://github.com/CodeDoesGood/org-website/projects/1>
 # 
@@ -73,7 +78,12 @@
 
 # Example of the `readr` package milestones:
 # 
-# <img src="img/readr-milestones.png" width=600>
+# ```{figure} img/readr-milestones.png
+# ---
+# height: 600px
+# name: readr-milestones
+# ---
+# ```
 # 
 # Source: https://github.com/tidyverse/readr/milestones
 
@@ -170,19 +180,34 @@ YouTubeVideo('kOE6b8zpfCY', width=854, height=480)
 # 
 # Create a new branch:
 # 
-# <img src="img/create_branch.png" width=600>
+# ```{figure} img/create_branch.png
+# ---
+# height: 600px
+# name: create_branch
+# ---
+# ```
 # 
 # Source: <https://github.com/UBC-DSCI/introduction-to-datascience>
 
 # View all branches and their status:
 # 
-# <img src="img/view_branches.png" width=600>
+# ```{figure} img/view_branches.png
+# ---
+# height: 600px
+# name: view_branches
+# ---
+# ```
 # 
 # Source: <https://github.com/UBC-DSCI/introduction-to-datascience>
 
 # And delete remote branches:
 # 
-# <img src="img/delete_branches.png" width=600>
+# ```{figure} img/delete_branches.png
+# ---
+# height: 600px
+# name: delete_branches
+# ---
+# ```
 # 
 # Source: <https://github.com/UBC-DSCI/introduction-to-datascience/branches>
 

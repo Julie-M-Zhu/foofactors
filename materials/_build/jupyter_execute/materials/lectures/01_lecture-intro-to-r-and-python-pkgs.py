@@ -112,6 +112,8 @@
 
 # Packages created via {usethis} and {devtools} can be shared so that they can be installed via source from GitHub, or as package binaries on CRAN. For a package to be shared on CRAN, there is a check and gatekeeping system (in contrast to PyPI). We will learn more about this in later parts of the course.
 
+# > Fun fact! Jenny Bryan, MDS founder, is the maintainer for the {usethis} R package!
+
 # ## Key package things for Python and R packages
 # 
 # | Description                                            | Python        | R            |
