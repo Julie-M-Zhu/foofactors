@@ -26,7 +26,7 @@
 # 
 # > The R package ecosystem has found great use in packaging data in addition to Software. Packaging data is beyond the scope of this course, but you should know that it is widely done in R and that you can do it if you want or need to.
 
-# Let's watch a video from rstudio::conf 2020, called RMarkdown Driven Development by Emily Riederer, because I think it is such a narrative on how analysis code can evolve into packages: 
+# Let's watch a video from rstudio::conf 2020, called RMarkdown Driven Development by Emily Riederer, because I think it is such a nice narrative on how analysis code can evolve into packages: 
 # 
 # [https://rstudio.com/resources/rstudioconf-2020/rmarkdown-driven-development/](https://rstudio.com/resources/rstudioconf-2020/rmarkdown-driven-development/)
 
