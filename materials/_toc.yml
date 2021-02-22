@@ -1,10 +1,10 @@
 - file: README
   numbered: false
 
-#- part: Lectures
-#  sections:
-  #- file: materials/lectures/01_lecture-intro-to-ds-workflows
-  #- file: materials/lectures/02_lecture-intro-to-scripts
+- part: Lectures
+  sections:
+  - file: materials/lectures/01_lecture-intro-to-r-and-python-pkgs
+  - file: materials/lectures/02_lecture-intro-more-git
   #- file: materials/lectures/03_lecture-advanced-reporting
   #- file: materials/lectures/04_lecture-shell-driver-scripts
   #- file: materials/lectures/05_lecture-make-driver-script
