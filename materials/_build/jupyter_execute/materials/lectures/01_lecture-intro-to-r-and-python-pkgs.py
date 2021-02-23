@@ -83,6 +83,12 @@
 
 # Cookiecutter templates are also useful to help setup the biolerplate project and directory structure needed for packages. We will use these in this course as well.
 
+# ### Learn more by building a toy Python package
+# 
+# For invidividual assignment 1, you will build a toy Python package using a tutorial we have put together for you: [How to package a Python](https://py-pkgs.org/03-how-to-package-a-python)
+
+# After building the toy package, read [Package structure and state](https://py-pkgs.org/04-package-structure) to deepen your understanding of what packaging means in Python and what packages actually are.
+
 # ## Tour de R packages
 # 
 # Some R packages you may want to explore:
@@ -113,6 +119,12 @@
 # Packages created via {usethis} and {devtools} can be shared so that they can be installed via source from GitHub, or as package binaries on CRAN. For a package to be shared on CRAN, there is a check and gatekeeping system (in contrast to PyPI). We will learn more about this in later parts of the course.
 
 # > Fun fact! Jenny Bryan, MDS founder, is the maintainer for the {usethis} R package!
+
+# ### Learn more by building a toy R package
+# 
+# For invidividual assignment 2, you will build a toy R package using a tutorial Jenny Bryan put together: [The Whole Game](https://r-pkgs.org/whole-game.html)
+
+# After building the toy package, read [Package structure and state](https://r-pkgs.org/package-structure-state.html) to deepen your understanding of what packaging means in R and what packages actually are.
 
 # ## Key package things for Python and R packages
 # 
