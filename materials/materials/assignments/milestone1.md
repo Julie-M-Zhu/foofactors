@@ -34,7 +34,7 @@ Come up with a topic for your project. Discuss the topic with your TA or lab ins
 ### 3. Create project structure for the Python project
 rubric={mechanics:40}
 
-1. Create [project structure for python project](https://ubc-mds.github.io/py-pkgs/whole-game.html) and push it as a public repository in the [UBC-MDS organization](https://github.com/UBC-MDS/) on Github.com.  
+1. Create [project structure for python project](https://py-pkgs.org/03-how-to-package-a-python) and push it as a public repository in the [UBC-MDS organization](https://github.com/UBC-MDS/) on Github.com.  
 
 1. The name of the repositories should be relevant to the package/project topics.
 
