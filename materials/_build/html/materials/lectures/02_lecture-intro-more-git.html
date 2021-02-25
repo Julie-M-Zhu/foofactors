@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lecture 2: Introduction &amp; my goodness more git! &#8212; DSCI 524 Collaborative Software Development</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -26,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -34,18 +34,17 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -79,22 +78,19 @@
   <h1 class="site-logo" id="site-title">DSCI 524 Collaborative Software Development</h1>
   
 </a>
-</div>
-
-<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
-
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../README.html">
    DSCI 524: Collaborative Software Development
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Lectures
  </span>
@@ -111,7 +107,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Assignments
  </span>
@@ -133,7 +129,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Appendices
  </span>
@@ -146,9 +142,7 @@
  </li>
 </ul>
 
-</nav>
-
- <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
   Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
@@ -177,11 +171,11 @@
             <i class="fas fa-arrow-up"></i>
         </button>
         
-        <div class="dropdown-buttons-trigger">
+        
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -193,8 +187,8 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
+
         <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -291,18 +285,18 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#master-branch-protection">
-   Master branch protection
+  <a class="reference internal nav-link" href="#main-branch-protection">
+   Main branch protection
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-to-accept-a-pull-request-on-a-github-repository-that-has-master-branch-protection">
-     How to accept a pull request on a GitHub repository that has master branch protection
+    <a class="reference internal nav-link" href="#how-to-accept-a-pull-request-on-a-github-repository-that-has-main-branch-protection">
+     How to accept a pull request on a GitHub repository that has main branch protection
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exercise-setting-up-master-branch-protection">
-     Exercise: Setting up master branch protection
+    <a class="reference internal nav-link" href="#exercise-setting-up-main-branch-protection">
+     Exercise: Setting up main branch protection
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -340,8 +334,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exercise-branching-and-pr-to-send-a-change-to-master">
-     Exercise: Branching and PR to send a change to master
+    <a class="reference internal nav-link" href="#exercise-branching-and-pr-to-send-a-change-to-main">
+     Exercise: Branching and PR to send a change to main
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -384,8 +378,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-happens-when-my-feature-branch-falls-behind-master">
-     What happens when my feature branch falls behind master?
+    <a class="reference internal nav-link" href="#what-happens-when-my-feature-branch-falls-behind-main">
+     What happens when my feature branch falls behind main?
     </a>
    </li>
   </ul>
@@ -409,8 +403,8 @@
 <ul class="simple">
 <li><p>Create project boards using GitHub and link tasks to issues]</p></li>
 <li><p>Create GitHub milestones to group related issues</p></li>
-<li><p>Set-up master branch protection on a GitHub repository</p></li>
-<li><p>Use branching and pull requests to propose changes to the master branch</p></li>
+<li><p>Set-up main branch protection on a GitHub repository</p></li>
+<li><p>Use branching and pull requests to propose changes to the main branch</p></li>
 <li><p>Compare and contrast the Git and GitHub flow development workflows</p></li>
 </ul>
 </div>
@@ -471,7 +465,7 @@
 <div class="figure align-default" id="readr-milestones">
 <a class="reference internal image-reference" href="../../_images/readr-milestones.png"><img alt="../../_images/readr-milestones.png" src="../../_images/readr-milestones.png" style="height: 600px;" /></a>
 </div>
-<p>Source: https://github.com/tidyverse/readr/milestones</p>
+<p>Source: <a class="reference external" href="https://github.com/tidyverse/readr/milestones">https://github.com/tidyverse/readr/milestones</a></p>
 <div class="section" id="exercise-getting-to-know-github-milestones">
 <h3>Exercise: Getting to know GitHub milestones<a class="headerlink" href="#exercise-getting-to-know-github-milestones" title="Permalink to this headline">¶</a></h3>
 <p>We are going to practice creating milestones and associating issues with them. To do this we will continue working with the same repository that you just created a project board for.</p>
@@ -482,7 +476,7 @@
 <li><p>Click “New milestone” and name it “week 1” and set the due date to be this Saturday. Click “Create milestone”.</p></li>
 <li><p>Go to the Issues tab, and for each issue that should be associated with the week 1 milestone (i.e., things due this Saturday), open that issue and set the milestone for that issue as “week 1”.</p></li>
 <li><p>Once you are done, go back to the Milestones page to view what the week 1 milestone looks like.</p></li>
-<li><p>Now this for week 2.</p></li>
+<li><p>If you finish early, do this for week 2.</p></li>
 </ol>
 </div>
 </div>
@@ -493,19 +487,20 @@
 </ul>
 </div>
 </div>
-<div class="section" id="master-branch-protection">
-<h2>Master branch protection<a class="headerlink" href="#master-branch-protection" title="Permalink to this headline">¶</a></h2>
-<p>Once we have developed the first working version of our software (that will be the end of week 2 for us in this course), we want to consider our master branch as the <strong>deployment</strong> branch.</p>
-<p>What do we mean by <strong>deployment</strong> branch? Here we mean that other people may be <strong>using and depending</strong> on it, and thus, if we push changes to master they <strong>must not break things</strong>!</p>
+<div class="section" id="main-branch-protection">
+<h2>Main branch protection<a class="headerlink" href="#main-branch-protection" title="Permalink to this headline">¶</a></h2>
+<p>Once we have developed the first working version of our software (that will be the end of week 2 for us in this course), we want to consider our main branch as the <strong>deployment</strong> branch.</p>
+<p>What do we mean by <strong>deployment</strong> branch? Here we mean that other people may be <strong>using and depending</strong> on it, and thus, if we push changes to main they <strong>must not break things</strong>!</p>
 <p>How do I make sure changes won’t break things?</p>
-<p>There are varying levels of checks and balances that can be put in place to do this. One fundamental practice is <strong>master branch protection</strong>. Here we essentially put a rule in place that no one can push directly to master, all changes to master must be sent via a pull request so that <strong>at least</strong> one entity (e.g., human) can check things over before the change gets applied to the master (i.e., deployment) branch.</p>
+<p>There are varying levels of checks and balances that can be put in place to do this. One fundamental practice is <strong>main branch protection</strong>. Here we essentially put a rule in place that no one can push directly to main, all changes to main must be sent via a pull request so that <strong>at least</strong> one entity (e.g., human) can check things over before the change gets applied to the main (i.e., deployment) branch.</p>
 <p>Readings:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://help.github.com/en/github/administering-a-repository/configuring-protected-branches">Configuring protected branches - GitHub help</a></p></li>
-<li><p><a class="reference external" href="https://github.community/t5/Support-Protips/Best-practices-for-protected-branches/ba-p/10224">Best practices for protected branches</a>.</p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/github/administering-a-repository/about-protected-branches">About protected branches</a>.</p></li>
 </ul>
-<div class="section" id="how-to-accept-a-pull-request-on-a-github-repository-that-has-master-branch-protection">
-<h3>How to accept a pull request on a GitHub repository that has master branch protection<a class="headerlink" href="#how-to-accept-a-pull-request-on-a-github-repository-that-has-master-branch-protection" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="how-to-accept-a-pull-request-on-a-github-repository-that-has-main-branch-protection">
+<h3>How to accept a pull request on a GitHub repository that has main branch protection<a class="headerlink" href="#how-to-accept-a-pull-request-on-a-github-repository-that-has-main-branch-protection" title="Permalink to this headline">¶</a></h3>
+<p>(note: at the time of video making, the default branch on GitHub as still called the master branch)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
@@ -525,15 +520,15 @@
 </div></div>
 </div>
 </div>
-<div class="section" id="exercise-setting-up-master-branch-protection">
-<h3>Exercise: Setting up master branch protection<a class="headerlink" href="#exercise-setting-up-master-branch-protection" title="Permalink to this headline">¶</a></h3>
-<p>We are going to practice setting up master branch protection. Once we set this up on our play repository linked to below, we will practice branching and pull requests to send changes to the master branch in a later exercise.</p>
+<div class="section" id="exercise-setting-up-main-branch-protection">
+<h3>Exercise: Setting up main branch protection<a class="headerlink" href="#exercise-setting-up-main-branch-protection" title="Permalink to this headline">¶</a></h3>
+<p>We are going to practice setting up main branch protection. Once we set this up on our play repository linked to below, we will practice branching and pull requests to send changes to the main branch in a later exercise.</p>
 <div class="section" id="id3">
 <h4>Steps:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li><p><strong>Import</strong> a copy of <a class="reference external" href="https://github.com/ttimbers/sqrt">this GitHub repository</a> (need help? see: <a class="reference external" href="https://help.github.com/en/github/importing-your-projects-to-github/importing-a-repository-with-github-importer"><em>How to import a GitHub repository</em></a>)</p></li>
-<li><p>Add master branch protection to your copy of this repository (make sure you tick the box “Include administrators” to also apply this to folks with write access to the repo, i.e., you!).</p></li>
-<li><p>Try to make a change by pushing directly to the master branch</p></li>
+<li><p>Add main branch protection to your copy of this repository (make sure you tick the box “Include administrators” to also apply this to folks with write access to the repo, i.e., you!).</p></li>
+<li><p>Try to make a change by pushing directly to the main branch</p></li>
 </ol>
 </div>
 </div>
@@ -612,13 +607,13 @@
 </div>
 <p>Source: <a class="reference external" href="https://github.com/UBC-DSCI/introduction-to-datascience/branches">https://github.com/UBC-DSCI/introduction-to-datascience/branches</a></p>
 </div>
-<div class="section" id="exercise-branching-and-pr-to-send-a-change-to-master">
-<h3>Exercise: Branching and PR to send a change to master<a class="headerlink" href="#exercise-branching-and-pr-to-send-a-change-to-master" title="Permalink to this headline">¶</a></h3>
-<p>We are going to practice using branching and pull requests to send changes to the master branch in a repository where we have set up master branch protection.</p>
+<div class="section" id="exercise-branching-and-pr-to-send-a-change-to-main">
+<h3>Exercise: Branching and PR to send a change to main<a class="headerlink" href="#exercise-branching-and-pr-to-send-a-change-to-main" title="Permalink to this headline">¶</a></h3>
+<p>We are going to practice using branching and pull requests to send changes to the main branch in a repository where we have set up main branch protection.</p>
 <div class="section" id="id5">
 <h4>Steps:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <ol>
-<li><p>Clone your copy of the <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> repository (the one where you just set up master branch protection).</p></li>
+<li><p>Clone your copy of the <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> repository (the one where you just set up main branch protection).</p></li>
 <li><p>Create and checkout a new branch named “better_error_msg” via <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">better_error_msg</span></code>.</p></li>
 <li><p>On that branch, fix the <code class="docutils literal notranslate"><span class="pre">sqrt.py</span></code> so that if you run this script with a negative number as an argument you do not get an difficult to understand error, but instead throw an exception helpfulling informing the user that the number should be positive.</p>
 <p>Fix to add to <code class="docutils literal notranslate"><span class="pre">sqrt.py</span></code>:</p>
@@ -627,8 +622,8 @@
 </pre></div>
 </div>
 </li>
-<li><p>Push that the changes on the <code class="docutils literal notranslate"><span class="pre">better_error_msg</span></code> branch (via <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">better_error_msg</span></code>) to GitHub and submit a pull request to the master branch to suggest your changes.</p></li>
-<li><p>Accept your own pull request to deploy the changes to master.</p></li>
+<li><p>Push that the changes on the <code class="docutils literal notranslate"><span class="pre">better_error_msg</span></code> branch (via <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">better_error_msg</span></code>) to GitHub and submit a pull request to the main branch to suggest your changes.</p></li>
+<li><p>Accept your own pull request to deploy the changes to main.</p></li>
 </ol>
 </div>
 </div>
@@ -646,22 +641,24 @@
 <h3>GitHub Flow<a class="headerlink" href="#github-flow" title="Permalink to this headline">¶</a></h3>
 <p>Key features:</p>
 <ul class="simple">
-<li><p><strong>A single</strong> “main” branch that also serves as the deployment branch, we call this master.</p></li>
-<li><p>Every new contribution is done on a new branch (with a meaningful name) created from master .</p></li>
-<li><p>Contributions from that new branch are sent back to master by means of a pull request, which ideally is reviewd &amp; tested before merging.</p></li>
+<li><p><strong>A single</strong> “main” branch that also serves as the deployment branch, we call this main.</p></li>
+<li><p>Every new contribution is done on a new branch (with a meaningful name) created from main.</p></li>
+<li><p>Contributions from that new branch are sent back to main by means of a pull request, which ideally is reviewd &amp; tested before merging.</p></li>
 </ul>
+<p>(note: at the time this figure was made, the default branch on GitHub as still called the master branch)</p>
 <img src="https://files.programster.org/tutorials/git/flows/github-flow.png" width=600>
-<p>Source: https://blog.programster.org/git-workflows</p>
+<p>Source: <a class="reference external" href="https://blog.programster.org/git-workflows">https://blog.programster.org/git-workflows</a></p>
 </div>
 <div class="section" id="git-flow">
 <h3>Git Flow<a class="headerlink" href="#git-flow" title="Permalink to this headline">¶</a></h3>
 <p>Key features:</p>
 <ul class="simple">
-<li><p><strong>Two</strong> “main” branches that last forever, master for deployment and develop where things are tested before they are released to master.</p></li>
-<li><p>Three supporting branches: feature, release &amp; hotfix. Both feature &amp; release branches are created from develop. feature branches should be merged into develop before they are incorporated into a release. release branches eventually get merged into master after adequate review and testing.</p></li>
+<li><p><strong>Two</strong> “main” branches that last forever, main for deployment and develop where things are tested before they are released to main.</p></li>
+<li><p>Three supporting branches: feature, release &amp; hotfix. Both feature &amp; release branches are created from develop. feature branches should be merged into develop before they are incorporated into a release. release branches eventually get merged into main after adequate review and testing.</p></li>
 </ul>
+<p>(note: at the time this figure was made, the default branch on GitHub as still called the master branch)</p>
 <img src="https://files.programster.org/tutorials/git/flows/git-flow.png" width=600>
-<p>Source: https://blog.programster.org/git-workflows</p>
+<p>Source: <a class="reference external" href="https://blog.programster.org/git-workflows">https://blog.programster.org/git-workflows</a></p>
 </div>
 <div class="section" id="discuss">
 <h3>Discuss:<a class="headerlink" href="#discuss" title="Permalink to this headline">¶</a></h3>
@@ -673,20 +670,20 @@
 <li><p>You will be expected to work using the GitHub flow workflow for your projects in this course. In Capstone, your group can decide for itself which branching workflow you want to use.</p></li>
 </ul>
 </div>
-<div class="section" id="what-happens-when-my-feature-branch-falls-behind-master">
-<h3>What happens when my feature branch falls behind master?<a class="headerlink" href="#what-happens-when-my-feature-branch-falls-behind-master" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="what-happens-when-my-feature-branch-falls-behind-main">
+<h3>What happens when my feature branch falls behind main?<a class="headerlink" href="#what-happens-when-my-feature-branch-falls-behind-main" title="Permalink to this headline">¶</a></h3>
 <p>We experienced a similar issue when working with the fork &amp; pull-request workflow in past projects, to catch up our fork to the source project’s fork. We had to do the following:</p>
 <ul class="simple">
 <li><p>ensure the source project’s fork was set as upstream</p></li>
 <li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span></code> to get the changes</p></li>
-<li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">origin/master</span></code> to merge the changes</p></li>
-<li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> (which is short for <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code>) to push our changes to our fork’s remote</p></li>
+<li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">origin/main</span></code> to merge the changes</p></li>
+<li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> (which is short for <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code>) to push our changes to our fork’s remote</p></li>
 </ul>
-<p>To catch up a branch that has fallen behind master we do the following:</p>
+<p>To catch up a branch that has fallen behind main we do the following:</p>
 <ul class="simple">
-<li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">master</span></code> to pull any changes from the remote version of master that we might not have</p></li>
+<li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">main</span></code> to pull any changes from the remote version of main that we might not have</p></li>
 <li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">&lt;branch&gt;</span></code> to make sure we are on the branch we want to catch up</p></li>
-<li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">master</span></code> to merge the changes</p></li>
+<li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">main</span></code> to merge the changes</p></li>
 <li><p>run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">&lt;branch&gt;</span></code> to push our updated branch to the remote</p></li>
 </ul>
 </div>
@@ -742,7 +739,7 @@
     </div>
 
     
-  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     
