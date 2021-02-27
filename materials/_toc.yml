@@ -5,8 +5,8 @@
   sections:
   - file: materials/lectures/01_lecture-intro-to-r-and-python-pkgs
   - file: materials/lectures/02_lecture-intro-more-git
-  #- file: materials/lectures/03_lecture-advanced-reporting
-  #- file: materials/lectures/04_lecture-shell-driver-scripts
+  - file: materials/lectures/03_lecture-code-review-and-testing
+  - file: materials/lectures/04_lecture-debugging-and-docs
   #- file: materials/lectures/05_lecture-make-driver-script
   #- file: materials/lectures/06_lecture-intro-to-docker
   #- file: materials/lectures/07_lecture_writing_dockerfiles
@@ -20,6 +20,8 @@
   #- file: materials/assignments/milestone4
   - file: materials/assignments/individual_assignment1
   - file: materials/assignments/individual_assignment2
+  - file: materials/assignments/peer_review
+  - file: materials/assignments/team_work
 
 - part: Appendices
   sections:

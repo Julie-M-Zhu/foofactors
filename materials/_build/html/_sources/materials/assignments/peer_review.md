@@ -1,0 +1,78 @@
+# Peer review: Constructively reviewing packages
+
+## Submission guidelines
+rubric={mechanics:2}
+
+In this assignment, each of you will be reviewing an R or a Python package created by your classmates based on [this reviewer assignment](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/8). You will be writing your review in an issue in [this repository](https://github.com/UBC-MDS/software-review). At the beginning of lab this week, each team will open two issues (one for Python package and one for R package) in the [UBC-MDS/software-review](https://github.com/UBC-MDS/software-review) and assign one or two students (as specified in [this list](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/8)) to the issue to act as reviewers. Each of you will be writing your review in the issue assigned to you. **In your peer_review home repository, please include a link to this issue so that the TAs can find your review easily.** 
+
+## Overall project goal
+
+During this course you will work collaboratively [in assigned teams of three or four](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/1) to develop a Python and an R software packages. The Python and R packages should do essentially the same thing (you are making one in each language so that you have the opportunity to learn how to do both).
+Your package could contain functions that 
+- are entirely new to the R or Python ecosystem or 
+- improve upon pre-existing functions in either language or
+- re-implement existing code/functions that you wish to deepen your understanding of (e.g., last year one student decided to write a linear regression package from scratch).
+
+At the end of this project, these packages should:
+- contain at least 3 or 4 useful functions (depending upon your team size) that handle errors gracefully
+- be well documented
+- have unit and integration tests
+- use GitHub actions for continuous integration (with a passing build stamp in the README)
+- have a Software Licence that describes how you will permit others to use your work
+- have a code of conduct document that describes behavioural expectations of team interactions
+- have a contributions document that outlines how the team will work together (expected workflow practices)
+- have a Git history that demonstrates the proposed workflow in the CONTRIBUTING.md file was followed and that all group members contributed equally
+
+
+## Peer review (new!)
+rubric={reasoning:30,writing:8,mechanics:10}
+
+Unlike other weekly assignments in this course, you will be mostly working individually in this assignment. Each of you will be reviewing either an R or a Python package based on [this reviewer assignment](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/8). 
+
+### Initiate a review request (as a team)
+
+- At the beginning of the lab, each team must initiate a review request by opening an issue per package in the [UBC-MDS/software-review](https://github.com/UBC-MDS/software-review) repository. 
+    - For initiating a reviewing request in R, use [this template](https://devguide.ropensci.org/reviewrequesttemplate.html). 
+    - For initiating a reviewing request in Python, use the template 
+under Submit Software for Review at [this link](https://github.com/pyOpenSci/software-review/issues/new/choose).
+- Assign the issue to the reviewers based on [this reviewer assignment](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/8). 
+
+### Readings (individual)
+
+- Read chapters 4 and 5 of [Software Peer Review of Packages](https://devguide.ropensci.org/softwarereviewintro.html).
+- If you are assigned to review an R package, [read chapter 7 of Software Peer Review of Packages](https://devguide.ropensci.org/reviewerguide.html). 
+- If you are assigned to review a Python package, [read this section of the dev guide](https://www.pyopensci.org/dev_guide/peer_review/reviewer_guide.html).
+
+### Reviewing (individual)
+
+- Once an issue is assigned to you, you can start your review. If nothing is assigned to you by the end of the lab, please contact the team whose package you are assigned to review.
+- Using the package-specific templates below, review the package assigned to you and write your comprehensive review. 
+    - [R](https://devguide.ropensci.org/reviewtemplate.html)
+    - [Python](https://www.pyopensci.org/dev_guide/appendices/templates.html#Review-Template)   
+- Other than checking the boxes in the template, we ask you to give at least 5-point constructive feedback in the `Review Comments` section. It is OK to have some overlap with the other person reviewing the package, but there should be **at least 3 points of constructive feedback unique to each review**. 
+- We encourage discussion and conversation between the authors and reviewers in the issue. 
+- Each team will get a chance to address your comments next week! 
+
+## Resources and guidelines to help you on your way
+
+Here are some example reviews for your reference. Look for `Package Review` in the conversation. 
+
+- R package reviews
+    - [opentripplanner](https://github.com/ropensci/software-review/issues/295)
+    - [mapscanner](https://github.com/ropensci/software-review/issues/330)
+
+- Python package reviews
+    - [MovingPandas](https://github.com/pyOpenSci/software-review/issues/18)
+    - [erddapy ](https://github.com/pyOpenSci/software-review/issues/1)
+    
+Some more guidance when you write your reviews.
+
+- Be concrete and specific: support your claims with evidence: provide an example or point to specific things when you write comments.
+
+- Be empathetic: when you write feedback, try to put yourself at the receiving end and think about what feedback would have been useful for you.
+
+- Be Constructive: Do not use evaluative or judgmental language; instead be constructive and help them build on their strengths.
+
+- Tone: Don't be mean. A good test to determine whether you are being mean or not is putting yourself or a close friend at the receiving end or imagining whether you can say it to them in a face-to-face conversation.
+
+
