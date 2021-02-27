@@ -36,7 +36,7 @@ rubric={quality:10}
 
 ## R package checklist
 
-### 1. Create project structure for the Python project
+### 1. Create project structure for the R project
 rubric={mechanics:20}
 
 1. Create [project structure for the R package](https://r-pkgs.org/whole-game.html) and push it as a public repository in the [UBC-MDS organization](https://github.com/UBC-MDS/) on Github.com. 
@@ -56,10 +56,10 @@ rubric={mechanics:20}
     - a bulleted list of the functions (and datasets if applicable) that will be included in the package (this should be a 1-2 sentence description for each function/dataset)
     - a paragraph describing where your packages fit into the R ecosystem (are there any other R packages that have the same/similar functionality? Provide links to any that do. If none exist, then clearly state this as well).  
 
-### 2. Function specifications
+### 2. R package function specifications
 rubric={quality:10}
 
-For this milestone you will write function documentation that will serve as specifications, but you will **NOT** write any code for your package functions. Specifically, set-up empty functions (with appropriate function names) containing no code in the files where you will eventually write code. Write function documentation (e.g., complete roxygen2 comments). These are the functions you wrote about in your proposal.
+For this milestone you will write R function documentation that will serve as specifications, but you will **NOT** write any code for your package functions. Specifically, set-up empty functions (with appropriate function names) containing no code in the files where you will eventually write code. Write function documentation (e.g., complete roxygen2 comments). These are the functions you wrote about in your proposal.
 
 
 ## Specific expectations for this milestone are:
