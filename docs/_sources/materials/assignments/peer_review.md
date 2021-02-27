@@ -3,28 +3,9 @@
 ## Submission guidelines
 rubric={mechanics:2}
 
-In this assignment, each of you will be reviewing an R or a Python package created by your classmates based on [this reviewer assignment](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/8). You will be writing your review in an issue in [this repository](https://github.com/UBC-MDS/software-review). At the beginning of lab this week, each team will open two issues (one for Python package and one for R package) in the [UBC-MDS/software-review](https://github.com/UBC-MDS/software-review) and assign one or two students (as specified in [this list](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/8)) to the issue to act as reviewers. Each of you will be writing your review in the issue assigned to you. **In your peer_review home repository, please include a link to this issue so that the TAs can find your review easily.** 
+In this assignment, each of you will be reviewing an R or a Python package created by your classmates based on [this reviewer assignment](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/8). You will be writing your review in an issue in [this repository](https://github.com/UBC-MDS/software-review-2021). At the beginning of lab this week, each team will open two issues (one for Python package and one for R package) in the [UBC-MDS/software-review-2021](https://github.com/UBC-MDS/software-review) and assign one or two students (as specified in [this list](https://github.ubc.ca/MDS-2020-21/DSCI_524_collab-sw-dev_students/issues/7)) to the issue to act as reviewers. Each of you will be writing your review in the issue assigned to you. **In your peer_review home repository, please include a link to this issue so that the TAs can find your review easily.** 
 
-## Overall project goal
-
-During this course you will work collaboratively [in assigned teams of three or four](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/1) to develop a Python and an R software packages. The Python and R packages should do essentially the same thing (you are making one in each language so that you have the opportunity to learn how to do both).
-Your package could contain functions that 
-- are entirely new to the R or Python ecosystem or 
-- improve upon pre-existing functions in either language or
-- re-implement existing code/functions that you wish to deepen your understanding of (e.g., last year one student decided to write a linear regression package from scratch).
-
-At the end of this project, these packages should:
-- contain at least 3 or 4 useful functions (depending upon your team size) that handle errors gracefully
-- be well documented
-- have unit and integration tests
-- use GitHub actions for continuous integration (with a passing build stamp in the README)
-- have a Software Licence that describes how you will permit others to use your work
-- have a code of conduct document that describes behavioural expectations of team interactions
-- have a contributions document that outlines how the team will work together (expected workflow practices)
-- have a Git history that demonstrates the proposed workflow in the CONTRIBUTING.md file was followed and that all group members contributed equally
-
-
-## Peer review (new!)
+## Peer review
 rubric={reasoning:30,writing:8,mechanics:10}
 
 Unlike other weekly assignments in this course, you will be mostly working individually in this assignment. Each of you will be reviewing either an R or a Python package based on [this reviewer assignment](https://github.ubc.ca/MDS-2019-20/DSCI_524_collab-sw-dev_students/issues/8). 
