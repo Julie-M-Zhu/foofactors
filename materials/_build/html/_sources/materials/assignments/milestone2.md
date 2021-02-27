@@ -1,5 +1,7 @@
 # Milestone2
 
+In this milestone, you will write the unit tests and function internals for your Python package, as well as setup the R package structure and function specifications.
+
 ## Python package checklist
 
 In the last milestone, you created your Python package structure and empty functions with documentation. In this milestone, you will focus on two things for your Python package: writing unit tests for your function specifications and writing the internal code for your functions. **Recall that each team member should write at least one function in R and one function in Python and unit tests for both functions.** 
