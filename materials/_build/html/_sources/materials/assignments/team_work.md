@@ -1,5 +1,7 @@
 # Team project reflection
 
+*You can acces an editable version of this file [here](https://github.ubc.ca/MDS-2020-21/DSCI_524_collab-sw-dev_students/blob/master/materials/materials/assignments/team_work.md).*
+
 The purpose of this individual report
 is to give you an avenue to present your viewpoint
 as to how the project went,
@@ -93,3 +95,7 @@ comment on the following areas:
       That is, what sort of things did you do to contribute to the evolution of the project?
     - What were the roles of others in your group?
 - What went well and poorly throughout the team project experience?
+
+## Submission instructions
+
+- Fill out this form (editable version of the form available [here](https://github.ubc.ca/MDS-2020-21/DSCI_524_collab-sw-dev_students/blob/master/materials/materials/assignments/team_work.md)) and convert it to an `.html` document. Finally submit it to Canvas.
