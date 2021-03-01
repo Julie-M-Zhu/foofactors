@@ -379,6 +379,16 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-pytest-works">
+   How pytest works:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   How pytest works:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-testthat-works">
    How testthat works:
   </a>
@@ -389,33 +399,16 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
+    <a class="reference internal nav-link" href="#id4">
      Organizing tests for your R package:
     </a>
    </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-pytest-works">
-   How pytest works:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   How pytest works:
-  </a>
-  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#general-guidelines-for-test-data-and-helper-functions">
      General guidelines for test data and helper functions:
     </a>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summary">
-   Summary
-  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#where-are-we-headed-next">
@@ -467,7 +460,6 @@
 <p>We are going to each do our own code review of a pull request. I have set-up a template GitHub repository for you so that you can easily generate a pull request for you to review.</p>
 <div class="section" id="steps">
 <h4>Steps:<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h4>
-<p><strong>When you are done step #5 indicate so on the <a class="reference external" href="https://www.sli.do">sli.do</a> poll (<code class="docutils literal notranslate"><span class="pre">#524-L03</span></code>).</strong></p>
 <ol class="simple">
 <li><p><strong>Import</strong> <a class="reference external" href="https://github.com/ttimbers/review-my-pull-request">this repository</a> to obtain a copy of it for yourself (do not fork it).</p></li>
 <li><p>Create a remote branch named <code class="docutils literal notranslate"><span class="pre">pr</span></code> (this will use GitHub Actions to create a pull request for you to review in this repository).</p></li>
@@ -553,7 +545,7 @@
 <div class="section" id="write-unit-tests-for-complex-objects">
 <h2>Write unit tests for complex objects<a class="headerlink" href="#write-unit-tests-for-complex-objects" title="Permalink to this headline">¶</a></h2>
 <p>(e.g., data frames, models, plots)</p>
-<p>Writing unit tests for a single value, vector or list is fairly straight forward from what we have learned in 511, but what about more complex object? How do we write tests when our functions return:</p>
+<p>Writing unit tests for a single value, vector or list is fairly straight forward from what we have learned in 511 &amp; 523, but what about more complex object? How do we write tests when our functions return:</p>
 <ul class="simple">
 <li><p>data frames?</p></li>
 <li><p>plot objects?</p></li>
@@ -562,7 +554,16 @@
 <div class="section" id="general-guidelings-for-testing-data-frames">
 <h3>General guidelings for testing data frames<a class="headerlink" href="#general-guidelings-for-testing-data-frames" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Where possible, use functions designed specifically for this (e.g., <code class="docutils literal notranslate"><span class="pre">dplyr::all_equal</span></code> and <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.equals</span></code>).</p></li>
+<li><p><strong>Reproducibly</strong> create helper/test data that is simple and tractable, that you could use to perform your function’s job by hand.</p>
+<ul>
+<li><p>Data can live (preferrably generated) in the test file, above where the tests are written (simplest)</p></li>
+<li><p>In Python packages, the <code class="docutils literal notranslate"><span class="pre">pytest</span></code> testing framework allows data to be coded as fixtures in the test file (more on this later).</p></li>
+<li><p>In R packages, data can also be “part of the package” and made external to the user. If you think your test data might be useful for the package user (i.e., beyond developer testing) then you can do this by putting it in the data directory. {usethis} has some nice helpers to make this easy, and you can see the instructions for this <a class="reference external" href="https://r-pkgs.org/data.html">here</a> in the R packages book.</p></li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li><p>Where possible, use functions designed specifically for testing data frames (e.g., <code class="docutils literal notranslate"><span class="pre">dplyr::all_equal</span></code> and <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.equals</span></code>).</p></li>
 </ul>
 <ul class="simple">
 <li><p>If not possible, test for equality of important values (e.g., specific columns) and attributes (e.g., shape, column names, column type, etc) using the <code class="docutils literal notranslate"><span class="pre">expect_*</span></code> functions inside of <code class="docutils literal notranslate"><span class="pre">test_that</span></code> in R, or via assertions in Python.</p></li>
@@ -571,10 +572,13 @@
 <div class="section" id="general-guidelings-for-testing-plot-objects">
 <h3>General guidelings for testing plot objects<a class="headerlink" href="#general-guidelings-for-testing-plot-objects" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
+<li><p><strong>Reproducibly</strong> create helper/test data that is simple and tractable, that you could use to test your function’s performance.</p></li>
+</ul>
+<ul class="simple">
 <li><p>Initial tests should be designed to test that plots have expected attributes (e.g., expected mark, correct mapping to axes, etc)</p></li>
 </ul>
 <ul class="simple">
-<li><p>Once a desired plot is generated, visual regression tests can be used to ensure that further code refactoring does not change the plot function. Tools for this exist for R in the <a class="reference external" href="https://github.com/r-lib/vdiffr"><code class="docutils literal notranslate"><span class="pre">vdiffr</span></code></a> package. AFAIK the Python tools in this space have only been developed/used for GUI &amp; web apps, perhpas they could be used for plots as well? I have not yet tried (nor found any examples of anyone who has).</p></li>
+<li><p>Once a desired plot is generated, visual regression tests can be used to ensure that further code refactoring does not change the plot function. Tools for this exist for R in the <a class="reference external" href="https://github.com/r-lib/vdiffr"><code class="docutils literal notranslate"><span class="pre">vdiffr</span></code></a> package. Matplotlib uses visual regression testing as well, you can see the docs for examples of this <a class="reference external" href="https://matplotlib.org/3.3.4/devel/testing.html#writing-an-image-comparison-test">here</a>.</p></li>
 </ul>
 <p>Consider this function, what tests might we write for it?</p>
 <div class="cell docutils container">
@@ -611,7 +615,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/03_lecture-code-review-and-testing_23_0.png" src="../../_images/03_lecture-code-review-and-testing_23_0.png" />
+<img alt="../../_images/03_lecture-code-review-and-testing_25_0.png" src="../../_images/03_lecture-code-review-and-testing_25_0.png" />
 </div>
 </div>
 <p>Can we find the an attribute that tells us it has a <code class="docutils literal notranslate"><span class="pre">geom_point</span></code> attribute?</p>
@@ -689,7 +693,12 @@ Traceback:
 <div class="section" id="general-guidelings-for-testing-model-objects">
 <h3>General guidelings for testing model objects<a class="headerlink" href="#general-guidelings-for-testing-model-objects" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
+<li><p><strong>Reproducibly</strong> create helper/test data that is simple and tractable, that you could use to perform your function’s job by hand (ideally)</p></li>
+</ul>
+<ul class="simple">
 <li><p>Initial tests should be designed to test that models have expected attributes and results</p></li>
+</ul>
+<ul class="simple">
 <li><p>Only secondarily, may you want to compare to existing methods (rationale for this being second: what if their tests are wrong? Or worse, what if they don’t have any!)</p></li>
 </ul>
 </div>
@@ -703,6 +712,25 @@ Traceback:
 <li><p>look at other packages that have functions and return the same kind of object, what do they test for?</p></li>
 </ul>
 </div>
+</div>
+<div class="section" id="how-pytest-works">
+<h2>How pytest works:<a class="headerlink" href="#how-pytest-works" title="Permalink to this headline">¶</a></h2>
+<p>Let’s explore the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> package!</p>
+<ul class="simple">
+<li><p>https://github.com/pandas-dev/pandas</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>How pytest works:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>To run all tests in an Python package that uses <code class="docutils literal notranslate"><span class="pre">pytest</span></code>, run the following from the command line with the working directory being set as the package’s root directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poetry</span> <span class="n">run</span> <span class="n">pytest</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: because we are using Poetry to build our packages, we need to prefix the pytest command with <code class="docutils literal notranslate"><span class="pre">poetry</span> <span class="pre">run</span></code> so that the tests are run in our package’s virtual environment.</p>
+</div></blockquote>
+<p>This command runs a recursive search (downward from the directory where this command is run) for files that are prefixed with <code class="docutils literal notranslate"><span class="pre">test_*.py</span></code> or <code class="docutils literal notranslate"><span class="pre">*_test.py</span></code> files which are imported by their test package name. From these files, it will run the functions whose names are pre-fixed with <code class="docutils literal notranslate"><span class="pre">test</span></code>.</p>
+<p><strong>Demonstration</strong> of <code class="docutils literal notranslate"><span class="pre">pytest</span></code> (time permitted)</p>
 </div>
 <div class="section" id="how-testthat-works">
 <h2>How testthat works:<a class="headerlink" href="#how-testthat-works" title="Permalink to this headline">¶</a></h2>
@@ -719,8 +747,8 @@ Traceback:
 <li><p>https://github.com/tidyverse/readr</p></li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h3>Organizing tests for your R package:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h3>Organizing tests for your R package:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Tests are organised hierarchically: <strong>expectations</strong> are grouped into <strong>tests</strong> which are organised in <strong>files</strong>:</p>
 <ul class="simple">
 <li><p>An <strong>expectation</strong> is the atom of testing. It describes the expected result of a computation: Does it have the right value and right class? Does it produce error messages when it should? An expectation automates visual checking of results in the console. Expectations are functions that start with <code class="docutils literal notranslate"><span class="pre">expect_</span></code>.</p></li>
@@ -730,25 +758,6 @@ Traceback:
 <p><em>Source: <a class="reference external" href="https://r-pkgs.org/tests.html">R Packages, Chapter 10</a></em></p>
 <p><strong>Demonstration</strong> of <code class="docutils literal notranslate"><span class="pre">pytest</span></code> (time permitted)</p>
 </div>
-</div>
-<div class="section" id="how-pytest-works">
-<h2>How pytest works:<a class="headerlink" href="#how-pytest-works" title="Permalink to this headline">¶</a></h2>
-<p>Let’s explore the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> package!</p>
-<ul class="simple">
-<li><p>https://github.com/pandas-dev/pandas</p></li>
-</ul>
-</div>
-<div class="section" id="id4">
-<h2>How pytest works:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>To run all tests in an Python package that uses <code class="docutils literal notranslate"><span class="pre">pytest</span></code>, run the following from the command line with the working directory being set as the package’s root directory:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poetry</span> <span class="n">run</span> <span class="n">pytest</span>
-</pre></div>
-</div>
-<blockquote>
-<div><p>Note: because we are using Poetry to build our packages, we need to prefix the pytest command with <code class="docutils literal notranslate"><span class="pre">poetry</span> <span class="pre">run</span></code> so that the tests are run in our package’s virtual environment.</p>
-</div></blockquote>
-<p>This command runs a recursive search (downward from the directory where this command is run) for files that are prefixed with <code class="docutils literal notranslate"><span class="pre">test_*.py</span></code> or <code class="docutils literal notranslate"><span class="pre">*_test.py</span></code> files which are imported by their test package name. From these files, it will run the functions whose names are pre-fixed with <code class="docutils literal notranslate"><span class="pre">test</span></code>.</p>
-<p><strong>Demonstration</strong> of <code class="docutils literal notranslate"><span class="pre">pytest</span></code> (time permitted)</p>
 <div class="section" id="general-guidelines-for-test-data-and-helper-functions">
 <h3>General guidelines for test data and helper functions:<a class="headerlink" href="#general-guidelines-for-test-data-and-helper-functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -767,11 +776,6 @@ Traceback:
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
-<p>What were the biggest take homes and/or most important new things you learned today?</p>
-<p>Enter your answers on the <a class="reference external" href="https://www.sli.do">sli.do</a> poll (<code class="docutils literal notranslate"><span class="pre">#DSCI-L03</span></code>) and I will summarize and post the results here after class.</p>
 </div>
 <div class="section" id="where-are-we-headed-next">
 <h2>Where are we headed next?<a class="headerlink" href="#where-are-we-headed-next" title="Permalink to this headline">¶</a></h2>
