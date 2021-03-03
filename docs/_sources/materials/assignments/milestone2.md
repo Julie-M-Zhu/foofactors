@@ -8,7 +8,7 @@ In the last milestone, you created your Python package structure and empty funct
 
 Before starting your work we encourage you to go through the bullet points below so that you can plan the milestone and assign tasks to individual team members. Note that your GitHub issues is one of the primary sources for us to see your work devision and contribution.  
 
-**By the end of this milestone, we should be able to install and use your Python package functions.**
+**By the end of this milestone, we should be able to install and use your Python package functions from GitHub** (you do not need to publish your package on PyPI yet).
 
 ### 1. Write test cases and code iteratively
 rubric={accuracy:20,quality:10,mechanics:10}
@@ -84,8 +84,8 @@ rubric={mechanics:10}
 rubric={mechanics:10}
 
 In the textbox provided on Canvas for the Milestone 2 assignment you must include:
-1. The URL for each of your your public projects' reposioties
-2. The URL to a release for each of your projects reposoitories
+1. The URL for each of your your public projects' repositories
+2. The URL to a release for each of your projects repositories
 
 ## Resources to help you on your way:
 
